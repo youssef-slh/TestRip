@@ -1,0 +1,14 @@
+sever:
+  port:8080
+datasource:
+    username: sa
+    password: P@ssw0rd
+    url: jdbc:sqlserver://localhost;databaseName=UsersDB
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2017Dialect
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: false
